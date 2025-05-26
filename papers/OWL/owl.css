@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 /* General Styles */
 :root {
     --primary-color: #1a1a1a;
@@ -9,142 +11,89 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
     line-height: 1.6;
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
+    color: #333;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
     text-align: center;
 }
 
-/* Header and Navigation */
-header, nav {
-    text-align: center;
-    justify-content: center;
-}
-
-.nav-link {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-.hero h1, h2, .authors, .contact, .links, .placeholder, .citation, p {
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+h1 {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 1em;
     font-weight: 700;
-    line-height: 1.2;
+    text-align: center;
 }
 
-.authors {
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
-    color: #666;
+h2 {
+    font-size: 1.8em;
+    color: #1a1a1a;
+    margin: 1.5em 0 0.8em 0;
+    font-weight: 600;
+    text-align: center;
 }
 
-.contact {
-    margin: 1.5rem 0;
-    color: var(--secondary-color);
-    font-size: 1.1rem;
+p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0 0 1.5em 0;
+    text-align: center;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eaeaea;
+    margin: 2em 0;
+}
+
+.authors, .contact, .links, .placeholder, .citation {
+    text-align: center;
 }
 
 .links {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem;
     margin-top: 2.5rem;
 }
 
-.button {
-    display: inline-block;
-    padding: 0.8rem 1.8rem;
-    background-color: var(--secondary-color);
-    color: white;
+.custom-button {
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+    background: #111;
+    color: #fff;
     text-decoration: none;
-    border-radius: 6px;
+    font-size: 1.3rem;
     font-weight: 500;
-    transition: background-color 0.2s;
+    border-radius: 2em;
+    padding: 0.7em 2em;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
 
-.button:hover {
-    background-color: #0052a3;
+.custom-button:hover {
+    background: #222;
+    transform: translateY(-2px) scale(1.03);
 }
 
-/* Sections */
-section {
-    margin-bottom: 5rem;
+.button-icon {
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: contain;
+    margin-right: 0.3em;
 }
 
-h2 {
-    color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--border-color);
-}
-
-/* Demo Section */
-.demo-content, .results-table, .evaluation-content {
-    text-align: center;
-}
-
-.demo-content {
-    background-color: var(--light-gray);
-    padding: 2.5rem;
-    border-radius: 12px;
-    margin-top: 2rem;
-}
-
-/* Results Table */
-.results-table {
-    overflow-x: auto;
-    margin: 2rem 0;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-    font-size: 0.95rem;
-}
-
-th, td {
-    padding: 1rem;
-    border: 1px solid var(--border-color);
-    text-align: left;
-}
-
-th {
-    background-color: var(--light-gray);
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-/* Examples Grid */
 .examples-grid {
     display: flex;
     flex-wrap: wrap;
@@ -154,54 +103,73 @@ th {
 }
 
 .example-item {
-    background-color: var(--light-gray);
+    background-color: #f5f5f5;
     padding: 1.5rem;
     border-radius: 12px;
     text-align: center;
 }
 
-/* Placeholders */
-.placeholder {
-    background-color: var(--light-gray);
-    padding: 3rem 2rem;
+.demo-content, .results-table, .evaluation-content {
     text-align: center;
-    border-radius: 8px;
-    color: #666;
-    font-size: 1.1rem;
 }
 
-/* Citations */
-.citation {
-    background-color: var(--light-gray);
-    padding: 1.5rem;
-    border-radius: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.95rem;
-    line-height: 1.8;
+.home-corner {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    font-size: 1em;
+    padding: 0.4em 1em;
+    background: #f5f5f5;
+    color: #333;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    z-index: 10;
 }
 
-/* Responsive Design */
+.home-corner:hover {
+    background: #e0e0e0;
+}
+
+header {
+    position: relative;
+}
+
 @media (max-width: 768px) {
+    body {
+        padding: 1em;
+        max-width: 100%;
+    }
     .container {
-        padding: 1.5rem;
+        padding: 0;
+        max-width: 100%;
     }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
 
-    .hero h1 {
-        font-size: 2.2rem;
-    }
+.footnote {
+    text-align: center;
+    font-size: 0.95em;
+    color: #888;
+    margin: 2em 0 1em 0;
+}
 
-    .links {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
+.main-figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
 
-    .button {
-        width: 100%;
-        text-align: center;
-    }
-
-    .examples-grid {
-        grid-template-columns: 1fr;
-    }
+.main-figure-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 } 
