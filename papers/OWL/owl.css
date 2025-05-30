@@ -214,9 +214,8 @@ header {
 .owl-slide-caption {
     text-align: left;
     font-size: 1.05em;
-    color: #555;
+    color: #000;
     margin-top: 0.5em;
-    font-style: italic;
 }
 
 @media (max-width: 600px) {
@@ -233,4 +232,12 @@ header {
     color: var(--secondary-color);
     text-align: center;
     margin-top: 0.7em;
+}
+
+.authors span + br + br {
+    display: none;
+}
+.authors span {
+    display: block;
+    margin-bottom: 0.3em;
 } 
