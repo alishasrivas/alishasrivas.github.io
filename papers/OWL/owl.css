@@ -74,10 +74,10 @@ hr {
     background: #111;
     color: #fff;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.05rem;
     font-weight: 500;
     border-radius: 2em;
-    padding: 0.7em 2em;
+    padding: 0.5em 1.3em;
     transition: background 0.2s, transform 0.2s;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
 }
@@ -88,8 +88,8 @@ hr {
 }
 
 .button-icon {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.2em;
+    height: 1.2em;
     object-fit: contain;
     margin-right: 0.3em;
 }
@@ -172,4 +172,65 @@ header {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.owl-slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 2em auto 2.5em auto;
+}
+
+.owl-slide-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.owl-slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.8);
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.owl-slide-btn.prev { left: 5px; }
+.owl-slide-btn.next { right: 5px; }
+.owl-slideshow:hover .owl-slide-btn {
+    opacity: 1;
+}
+.owl-slide-caption {
+    text-align: left;
+    font-size: 1.05em;
+    color: #555;
+    margin-top: 0.5em;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .owl-slideshow, .owl-slide-img {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        max-width: 100vw;
+    }
+}
+
+.slideshow-caption {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 0.7em;
 } 
