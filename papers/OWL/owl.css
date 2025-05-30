@@ -216,6 +216,7 @@ header {
     font-size: 1.05em;
     color: #000;
     margin-top: 0.5em;
+    font-style: normal;
 }
 
 @media (max-width: 600px) {
@@ -240,4 +241,11 @@ header {
 .authors span {
     display: block;
     margin-bottom: 0.3em;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2.5em 0;
+    width: 100%;
 } 
