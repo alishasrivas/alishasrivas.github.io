@@ -348,3 +348,23 @@ th {
     object-fit: contain !important;
     margin-right: 0.3em !important;
 }
+
+.see-more-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #eaeaea;
+  color: #333;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.see-more-btn:hover {
+  background-color: #eaeaea;
+  border-color: #ccc;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

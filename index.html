@@ -30,7 +30,7 @@
             href="https://scholar.google.com/citations?hl=en&user=cDvD5woAAAAJ&view_op=list_works&authuser=1&gmla=ABOlHiyWGly5STb4HYoAiJIXBYrohaRblVVu_wDJwnCZ9sAYtvTuUTs6Lrb8nNtxAyfWCcbeXFGwr1pOeWW5Hili"
             target="_blank">[Google Scholar]</a>
         <a class="hyperlinkstop"
-            href="https://drive.google.com/file/d/1dmn6ypcoHLcSnS_3yDKU4LEuEoY5qyVX/view?usp=sharing"
+            href=""
             target="_blank">[Resume]</a>
         <a class="hyperlinkstop" href="https://huggingface.co/alishasrivas" target="_blank">[Hugging Face]</a>
         <a class="hyperlinkstop" href="https://bsky.app/profile/alishasrivas.bsky.social" target="_blank">[Bluesky]</a>
@@ -42,8 +42,9 @@
                 
             During the school year, I serve as President of <a class="hyperlinks"
             href="https://cold-echo-86a.notion.site/Welcome-to-UMass-Product-3232bef97d7745e7847e1d2e48124514"
-            target="_blank">UMass Product</a>, leading the think tank on major tech industry events, product
-        thinking seminars, and pre-seed startup incubation. 
+            target="_blank">UMass Product</a>, leading the think tank on major tech industry events, product thinking seminars, and pre-seed startup incubation. 
+            
+
         </p>
     
         <hr>
@@ -63,9 +64,6 @@
         <div class="links" style="display: flex; justify-content: center; align-items: center; gap: 1em; margin: 2em 0 0 0;">
             <a href="http://alishasrivastava.com/papers/OWL/" class="custom-button">
                 🦉 Overview
-            </a>
-            <a href="https://huggingface.co/alishasrivas" class="custom-button" target="_blank">
-                <img src="/buttons/huggingface.svg" alt="Dataset" class="button-icon"> Dataset
             </a>
             <a href="https://github.com/emirkaan5/OWL" class="custom-button" target="_blank">
                 <img src="/buttons/github.png" alt="Code" class="button-icon"> Code
@@ -106,39 +104,55 @@
             <div class="academia-slideshow" style="margin: 0 auto;">
                 <img class="slide-img" src="MassURC.jpeg" style="display:block;">
                 <img class="slide-img" src="MassURC Poster.jpg" style="display:none;">
+                <img class="slide-img" src="OWL poster.pdf" style="display:none;">
                 <button class="slide-btn prev" onclick="plusSlides(-1)">&#10094;</button>
                 <button class="slide-btn next" onclick="plusSlides(1)">&#10095;</button>
                 <div class="slide-caption" id="slide-caption">Caption for Slide 1</div>
             </div>
             <div class="academia-content">
                 <div class="event-row">
+                    <span><b>International Conference on Machine Learning</b></span>
+                    <span class="event-links"><a class="hyperlinks" href="https://icml.cc/virtual/2025/workshop/39996" target="_blank">[Conference]</a></span>
+                    <span class="event-links"><a class="hyperlinks" href="" target="_blank">[Poster]</a></span>
+                    <span class="event-links"><a class="hyperlinks" href="https://github.com/emirkaan5/OWL" target="_blank">[Code]</a></span>
+                </div>
+                <p style="text-align: left;">
+                    Poster Presentation on OWL at MemFM, The Impact of Memorization on Trustworthy Foundation Models Workshop<br>
+                </p>
+                <div class="event-row">
                   <span><b>Voices of Data Science</b></span>
                   <span class="event-links"><a class="hyperlinks" href="https://sites.google.com/view/voicesofdatascience/speakers25?authuser=0" target="_blank">[Conference]</a></span>
                 </div>
                 <p style="text-align: left;">
-                    Workshop on Empirical Methods and Validation of Memorization in Large Language Models<br>
+                    Hosted a Workshop on Empirical Methods and Validation of Memorization in Large Language Models<br>
                 </p>
-                <div class="event-row">
-                  <span><b>Massachusetts Undergraduate Research Conference</b></span>
-                  <span class="event-links"><a class="hyperlinks" href="https://drive.google.com/file/d/1F7C3Y-uiRZwspB3CC3YbzucC7FDSETDy/view?usp=sharing" target="_blank">[Poster]</a> <a class="hyperlinks" href="https://github.com/nhminle/BEAM" target="_blank">[Code]</a></span>
+                
+                <div class="hidden" id="more-conferences">
+                    <div class="event-row">
+                      <span><b>Massachusetts Undergraduate Research Conference</b></span>
+                    </div>
+                    <p style="text-align: left;">
+                        Poster Presentation on Cross-Lingual Retrieval for Low-Resource Languages<br>
+                    </p>
+                    <div class="event-row">
+                      <span><b>Harvard University WeCode Conference</b></span>
+                    </div>
+                    <p style="text-align: left;">
+                        Undergraduate Research Presentation on Memorization in Large Language Models<br>
+                    </p>
                 </div>
-                <p style="text-align: left;">
-                    Poster Session on Cross-Lingual Retrieval for Low-Resource Languages<br>
-                </p>
-                <div class="event-row">
-                  <span><b>Harvard University WeCode Conference</b></span>
-                  <span class="event-links"><a class="hyperlinks" href="https://drive.google.com/file/d/1F7C3Y-uiRZwspB3CC3YbzucC7FDSETDy/view?usp=sharing" target="_blank">[Poster]</a> <a class="hyperlinks" href="https://github.com/nhminle/BEAM" target="_blank">[Code]</a></span>
+                
+                <div style="text-align: center; margin: 1em 0;">
+                    <button onclick="unhide('more-conferences')" class="see-more-btn">More</button>
                 </div>
-                <p style="text-align: left;">
-                    Undergraduate Research Presentation on Memorization in Large Language Models<br>
-                </p>
             </div>
         </div>
         <script>
         let slideIndex = 0;
         const captions = [
           "Presenting at MassURC conference.",
-          "ERSP Research Poster 2023"
+          "ERSP Research Poster 2023",
+          "OWL Poster - ICML MemFM Workshop 2025"
         ];
         showSlides(slideIndex);
         function plusSlides(n) {
@@ -162,9 +176,7 @@
         <div style="text-align: left;">
             <p><b>NLP & Computational Linguistics</b></p>
             <p style="text-align: left;">
-                Rēdəlaʊd: English to IPA Machine Translator 
-                <a class="hyperlinks" href="https://github.com/alishasrivas/IPAliteraturetranslator/tree/main" target="_blank">[GitHub]</a>
-                <a class="hyperlinks" href="/projects/Rēdəlaʊd/" target="_blank">[Website]</a><br>
+                OWL: A Python library for creating datasets to evaluate cross-lingual recall of memorized texts in LLMs. Coming soon...
             </p>
             <p><b>Product Management</b></p>
             <p style="text-align: left;">
