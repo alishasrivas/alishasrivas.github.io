@@ -87,9 +87,27 @@
             <section class="experiments">
                 <h2>Experiments</h2>
                 <div class="results-table">
-                    <div class="main-figure">
-                        <img src="https://github.com/alishasrivas/alishasrivas.github.io/blob/main/OWL%20Experiments.png?raw=true" alt="OWL Experiments Figure" class="main-figure-img">
+                    <div class="experiments-slideshow" style="margin: 0 auto;">
+                        <img class="exp-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/All%20Results.png" style="display:block;">
+                        <img class="exp-slide-img" src="https://github.com/alishasrivas/alishasrivas.github.io/blob/main/OWL%20Experiments.png?raw=true" style="display:none;">
+                        <button class="exp-slide-btn prev" onclick="expPlusSlides(-1)">&#10094;</button>
+                        <button class="exp-slide-btn next" onclick="expPlusSlides(1)">&#10095;</button>
                     </div>
+                    <script>
+                    let expSlideIndex = 0;
+                    function expPlusSlides(n) {
+                        showExpSlides(expSlideIndex += n);
+                    }
+                    function showExpSlides(n) {
+                        let slides = document.getElementsByClassName("exp-slide-img");
+                        if (n >= slides.length) {expSlideIndex = 0;}
+                        if (n < 0) {expSlideIndex = slides.length - 1;}
+                        for (let i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slides[expSlideIndex].style.display = "block";
+                    }
+                    </script>
                     <p>We probe LLMs to identify books and authors across languages, predict masked character names, and generate continuations via memorization as knowledge accquisiton.</p>
                     <p>There is non-zero accuracy across all tasks and languages, even for low-resource languages. This suggests that LLMs do exhibit cross-lingual knowledge transfer.</p>
                 </div>
@@ -100,7 +118,7 @@
                 <div class="pipeline-figure">
                     <img src="https://github.com/alishasrivas/alishasrivas.github.io/blob/main/OWL%20Pipeline.png?raw=true" alt="OWL Pipeline Figure" class="main-figure-img">
                 </div>
-                <p>Note that <i>unseen</i> translations are <i>likely</i> to be unseen as they are newly created translations for books which <i>to the best of our knowledge</i> did not have exisitng translations in these low resource languages.</p>
+                <p><b>Note:</b> <i>Unseen</i> translations are <i>likely</i> to be unseen as they are newly created translations for books which <i>to the best of our knowledge</i> did not have exisitng translations in these low resource languages.</p>
                 <p>If you'd like to construct your own dataset from our pipeline, you can see our code <a href="https://github.com/emirkaan5/OWL/tree/main" target="_blank">here</a>.</p>
                 <p>In the future, we plan to release a Python library which will allow you to construct your own multilingual & multimodal OWL dataset from any text corpus. </p>
             </section>
