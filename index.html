@@ -23,136 +23,34 @@
 <body>
     <div style="text-align: center;">
         <h1>Alisha Srivastava</h1>
-        <a class="hyperlinkstop" href="mailto:alishasrivas@umass.edu" target="_blank">[Email]</a>
+        <a class="hyperlinkstop" href="mailto:alisha.srivastava@gmail.com" target="_blank">[Email]</a>
         <a class="hyperlinkstop" href="https://github.com/alishasrivas" target="_blank">[Github]</a>
-        <a class="hyperlinkstop" href="https://twitter.com/AlishaSrivas" target="_blank">[Twitter]</a>
-        <a class="hyperlinkstop"
-            href="https://scholar.google.com/citations?hl=en&user=cDvD5woAAAAJ&view_op=list_works&authuser=1&gmla=ABOlHiyWGly5STb4HYoAiJIXBYrohaRblVVu_wDJwnCZ9sAYtvTuUTs6Lrb8nNtxAyfWCcbeXFGwr1pOeWW5Hili"
-            target="_blank">[Google Scholar]</a>
-        <a class="hyperlinkstop"
-            href=""
-            target="_blank">[Resume]</a>
-        <a class="hyperlinkstop" href="https://huggingface.co/alishasrivas" target="_blank">[Hugging Face]</a>
-        <a class="hyperlinkstop" href="https://bsky.app/profile/alishasrivas.bsky.social" target="_blank">[Bluesky]</a>
+        <a class="hyperlinkstop" href="https://www.linkedin.com" target="_blank">[LinkedIn]</a>
 
-        <img class="me" src="me.png" alt="Alisha Srivastava">
+        <img class="me" src="me.jpg" alt="Alisha Srivastava">
         <p class="imgcaption">Hey there 👋🏽, I'm Alisha!</p>
         <p>
-            I use <i>she/her</i> pronouns and publish under <b>Alisha Srivastava</b>. I am currently a Data Science Undergraduate at UMass Amherst.
-                
-            During the school year, I serve as President of <a class="hyperlinks"
-            href="https://cold-echo-86a.notion.site/Welcome-to-UMass-Product-3232bef97d7745e7847e1d2e48124514"
-            target="_blank">UMass Product</a>, leading the think tank on major tech industry events and product thinking seminars. 
-            
+            I use <i>she/her</i> pronouns and publish under <b>Alisha Srivastava</b>. I graduated from UMass Amherst studying Data Science in 2026.
 
         </p>
     
         <hr>
 
-        <h2 class="topictitle">🦉 OWL: Probing Cross-Lingual Recall of Memorized Texts via World Literature</h2><br>
-        <div class="owl-slideshow" style="margin: 0 auto;">
-            <img class="owl-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/All%20Results.png" style="display:none;">
-            <img class="owl-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/Overview.png" style="display:none;">
-            <img class="owl-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/DP.jpeg" style="display:none;">
-            <img class="owl-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/Pertubations.jpeg" style="display:none;">
-            <img class="owl-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/Multimodal.jpeg" style="display:none;">
-            <img class="owl-slide-img" src="https://raw.githubusercontent.com/alishasrivas/alishasrivas.github.io/main/papers/OWL/figures/quantization.jpeg" style="display:block;">
-            <button class="owl-slide-btn prev" onclick="owlPlusSlides(-1)">&#10094;</button>
-            <button class="owl-slide-btn next" onclick="owlPlusSlides(1)">&#10095;</button>
-            <div class="owl-slide-caption" id="owl-slide-caption">Placeholder caption 1</div>
+        <h2 class="topictitle">Undergrad @ UMass</h2><br>
+        <div class="academia-slideshow" style="margin: 0 auto;">
+            <img class="slide-img" src="emnlp.jpeg" style="display:block;">
+            <img class="slide-img" src="icml.jpeg" style="display:none;">
+            <img class="slide-img" src="pmclub.jpeg" style="display:none;">
+            <button class="slide-btn prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="slide-btn next" onclick="plusSlides(1)">&#10095;</button>
         </div>
-        <div class="links" style="display: flex; justify-content: center; align-items: center; gap: 1em; margin: 2em 0 0 0;">
-            <a href="http://alishasrivas.github.io/papers/OWL/" class="custom-button">
-                🦉 Overview
-            </a>
-            <a href="https://github.com/emirkaan5/OWL" class="custom-button" target="_blank">
-                <img src="/buttons/github.png" alt="Code" class="button-icon"> Code
-            </a>
-            <a href="https://arxiv.org/abs/2505.22945" class="custom-button" target="_blank">
-                <img src="/buttons/arxiv.svg" alt="Paper" class="button-icon"> Paper
-            </a>
-        </div>
-        <script>
-        let owlSlideIndex = 0;
-        const owlCaptions = [
-          "LLMs memorize novels 📚 in English. But what about existing translations? Or translations into new languages?<br><br>Our 🦉OWL dataset (31K/10 languages) shows GPT4o recognizes books:<br>92% English<br>83% official translations<br>69% unseen translations<br>75% as audio (EN)",
-          "OWL has aligned excerpts from 20 EN novels, with translations in ES 🇪🇸, TR 🇹🇷, VI 🇻🇳 + 6 new low-resource languages 🌍 & EN audio 🔊<br><br>We probe LLMs to:<br>1️⃣ identify book/author (direct probing)<br>2️⃣ predict masked names (name cloze)<br>3️⃣ generate continuation (prefix probing)",
-          "LLMs can identify book titles and authors across languages - even those not seen during pre-training:<br><br>63.8% accuracy on English passages<br>47.2% on official translations (Spanish, Turkish, Vietnamese) 🇪🇸 🇹🇷 🇻🇳<br>36.5% on completely unseen languages like Sesotho & Maithili 🌍",
-          "What if we perturb the text?<br><br>🧩 shuffled text<br>🎭 masked character names<br>🙅🏻‍♀️ passages w/o characters<br><br>🚨Reduce accuracy with the degree varying across languages BUT models can still identify the books better than newly published books (0.1%) 🚨",
-          "🔊 LLMs can transfer knowledge across modalities (Text → Audio).<br><br>On GPT-4o-Audio vs Text:<br>📖 Direct Probing: 75.5% (vs. 92.3%)<br>👤 Name Cloze: 15.9% (vs. 38.6%)<br>✍️ Prefix Probing: 27.2% (vs. 22.6%)<br><br>Qwen-Omni shows similar trends but lower accuracy.",
-          "🧮 Does quantization (GPTQ) impact cross-lingual knowledge transfer?<br><br>LLaMA-3.1-70B: 4-bit > 8-bit ⏩ accuracy drops MORE at 8-bit (up to 25%)<br>LLaMA-3.1-8B: 8-bit > 4-bit ⏩ accuracy drops MORE at 4-bit (up to 8%)<br><br>🧠 Bigger models aren't always more robust to quantization."
-        ];
-        showOwlSlides(owlSlideIndex);
-        function owlPlusSlides(n) {
-            showOwlSlides(owlSlideIndex += n);
-        }
-        function showOwlSlides(n) {
-            let slides = document.getElementsByClassName("owl-slide-img");
-            if (n >= slides.length) {owlSlideIndex = 0;}
-            if (n < 0) {owlSlideIndex = slides.length - 1;}
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[owlSlideIndex].style.display = "block";
-            document.getElementById("owl-slide-caption").innerHTML = owlCaptions[owlSlideIndex];
-        }
-        </script>
-        <hr>
-
-        <h2 class="topictitle">In Academia</h2><br>
-        <div class="academia-flex">
-            <div class="academia-slideshow" style="margin: 0 auto;">
-                <img class="slide-img" src="MassURC.jpeg" style="display:block;">
-                <img class="slide-img" src="MassURC Poster.jpg" style="display:none;">
-                <img class="slide-img" src="OWL poster.pdf" style="display:none;">
-                <button class="slide-btn prev" onclick="plusSlides(-1)">&#10094;</button>
-                <button class="slide-btn next" onclick="plusSlides(1)">&#10095;</button>
-                <div class="slide-caption" id="slide-caption">Caption for Slide 1</div>
-            </div>
-            <div class="academia-content">
-                <div class="event-row">
-                    <span><b>International Conference on Machine Learning</b></span>
-                    <span class="event-links"><a class="hyperlinks" href="https://icml.cc/virtual/2025/workshop/39996" target="_blank">[Workshop]</a></span>
-                    <span class="event-links"><a class="hyperlinks" href="" target="_blank">[Poster]</a></span>
-                    <span class="event-links"><a class="hyperlinks" href="https://github.com/emirkaan5/OWL" target="_blank">[Code]</a></span>
-                </div>
-                <p style="text-align: left;">
-                    Poster Presentation on OWL at MemFM, The Impact of Memorization on Trustworthy Foundation Models Workshop<br>
-                </p>
-                <div class="event-row">
-                  <span><b>Voices of Data Science</b></span>
-                  <span class="event-links"><a class="hyperlinks" href="https://sites.google.com/view/voicesofdatascience/speakers25?authuser=0" target="_blank">[Conference]</a></span>
-                </div>
-                <p style="text-align: left;">
-                    Hosted a Workshop on Empirical Methods and Validation of Memorization in Large Language Models<br>
-                </p>
-                
-                <div class="hidden" id="more-conferences">
-                    <div class="event-row">
-                      <span><b>Massachusetts Undergraduate Research Conference</b></span>
-                    </div>
-                    <p style="text-align: left;">
-                        Poster Presentation on Cross-Lingual Retrieval for Low-Resource Languages<br>
-                    </p>
-                    <div class="event-row">
-                      <span><b>Harvard University WeCode Conference</b></span>
-                    </div>
-                    <p style="text-align: left;">
-                        Undergraduate Research Presentation on Memorization in Large Language Models<br>
-                    </p>
-                </div>
-                
-                <div style="text-align: center; margin: 1em 0;">
-                    <button onclick="unhide('more-conferences')" class="see-more-btn">More</button>
-                </div>
-            </div>
-        </div>
+        <div class="slide-caption" id="slide-caption" style="max-width: 380px; margin: 0 auto 2em auto;">Presented at the 2025 Empirical Methods of Natural Language Processing Conference (EMNLP) in Suzhou, China.</div>
         <script>
         let slideIndex = 0;
         const captions = [
-          "Presenting at MassURC conference.",
-          "ERSP Research Poster 2023",
-          "OWL Poster - ICML MemFM Workshop 2025"
+          "Presented at the 2025 Empirical Methods of Natural Language Processing Conference (EMNLP) in Suzhou, China.",
+          "Presented at the Impact of Memorization on Trustworthy Foundation Models workshop at the 2025 International Conference on Machine Learning (ICML) in Vancouver, Canada.",
+          "Served on the executive board of the UMass Amherst Product Management Club for 3 years."
         ];
         showSlides(slideIndex);
         function plusSlides(n) {
@@ -169,23 +67,7 @@
             document.getElementById("slide-caption").textContent = captions[slideIndex];
         }
         </script>
-        
-        <hr>
 
-        <h2 class="topictitle">My Projects</h2><br>
-        <div style="text-align: left;">
-            <p><b>NLP & Computational Linguistics</b></p>
-            <p style="text-align: left;">
-                OWL: A Python library for creating datasets to evaluate cross-lingual recall of memorized texts in LLMs. Coming soon...
-            </p>
-            <p><b>Product Management</b></p>
-            <p style="text-align: left;">
-                Reverse Engineering & Product Design @ UMass Product <a class="hyperlinks"
-                    href="https://cold-echo-86a.notion.site/Product-Showcase-1c21be5a63fa80c88616c1e606adc777"
-                    target="_blank">[Reports]</a><br>
-            </p>
-        </div>
-        
         <hr>
 
         <div id="misc">
@@ -196,20 +78,14 @@
             <p>I travel a lot and am a novice international food critic. Follow me on <a class="hyperlinks"
                     href="https://beliapp.co/lists/applemartini" target="_blank">Beli</a>! </p>
 
-            <p>In my free time, I enjoy <a class="hyperlinks"
-                    href="https://www.notion.so/Experiments-in-Oil-Pastel-Painting-9dd708c160844d3395f1027194533732"
-                    target="_blank">oil pastel painting</a> 🎨, scuba diving 🤿, and live house music 🎸.
+            <p>In my free time, I enjoy scuba diving 🤿, live music 🎸, and surfing 🏄🏻‍♀️.
             </p>
-            
-            <p>I am a big Taylor Swift fan. An album I consider a masterpiece is <a class="hyperlinks"
-                    href="https://music.apple.com/us/album/reputation/1440933849"
-                    target="_blank">Reputation</a> 🐍. Can't wait for the Taylor's Version! 🎧 </p>
         </div>
         
         <hr>
 
         <footer style="text-align: center; font-size: 12px;">
-            Last updated: May 2025. Developed by Alisha Srivastava.
+            Last updated: June 2026. Developed by Alisha Srivastava.
         </footer>
         
         <script type="application/ld+json">
@@ -219,7 +95,7 @@
                 "name": "Alisha Srivastava",
                 "jobTitle": "Data Science Undergraduate",
                 "url": "https://alishasrivastava.com",
-                "image": "https://alishasrivastava.com/me.png",
+                "image": "https://alishasrivastava.com/me.jpg",
                 "sameAs": [
                     "https://www.linkedin.com/in/alishasrivastava",
                     "https://twitter.com/AlishaSrivas",

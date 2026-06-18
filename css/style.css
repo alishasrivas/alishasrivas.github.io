@@ -181,16 +181,15 @@ th {
 }
 .academia-slideshow {
   position: relative;
-  width: 500px;
-  min-width: 500px;
-  height: 300px;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 2.5em;
+  width: 380px;
+  min-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
 }
 .slide-img {
-  width: 500px;
-  height: 300px;
+  width: 380px;
+  height: 240px;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
